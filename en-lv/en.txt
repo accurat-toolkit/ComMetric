@@ -1,0 +1,4 @@
+/home/fzsu/ComMetric/en-lv/en/en-1.txt
+/home/fzsu/ComMetric/en-lv/en/en-2.txt
+/home/fzsu/ComMetric/en-lv/en/en-3.txt
+/home/fzsu/ComMetric/en-lv/en/en-4.txt

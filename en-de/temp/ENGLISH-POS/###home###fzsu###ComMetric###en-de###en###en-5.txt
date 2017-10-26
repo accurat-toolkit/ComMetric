@@ -1,0 +1,17 @@
+Since/IN ancient/JJ times/NNS man/NN has/VBZ harnessed/VBN the/DT power/NN of/IN the/DT wind/NN ,/, the/DT earliest/JJS known/VBN wind/NN mills/NNS were/VBD vertical/JJ axis/NN type/NN ,/, developed/VBN by/IN the/DT Persians/NNPS in/IN 500-900/CD A.D./NNP -LRB-/-LRB- citation/NN needed/VBN -RRB-/-RRB- One/CD of/IN the/DT most/RBS scenic/JJ and/CC historic/JJ applications/NNS of/IN wind/NN power/NN can/MD still/RB be/VB found/VBN on/IN the/DT Island/NNP of/IN Crete/NNP ;/: electric/JJ motors/NNS of/IN pre-industrial/JJ Europe/NNP 
+The/DT first/JJ windmills/NNS in/IN Europe/NNP were/VBD developed/VBN in/IN 1270/CD A.D./NNP and/CC were/VBD of/IN the/DT horizontal/JJ axis/NN type/NN ./. -LRB-/-LRB- citation/NN needed/VBN -RRB-/-RRB- By/IN 1390/CD A./NN D/NNP ,/, the/DT Dutch/JJ set/VBN out/RP to/TO refine/VB the/DT tower/NN mill/NN design/NN and/CC after/IN 500/CD years/NNS of/IN incremental/JJ developments/NNS the/DT wind/NN sails/NNS had/VBD all/PDT the/DT major/JJ features/NNS recognized/VBN by/IN modern/JJ designers/NNS ./. Wind/NN mills/NNS were/VBD the/DT electric/JJ motors/NNS of/IN pre-industrial/JJ Europe/NNP ./. -LRB-/-LRB- citation/NN needed/VBN -RRB-/-RRB- 
+Water/NNP pumping/VBG systems/NNS were/VBD perfected/VBN in/IN 1854/CD ,/, beginning/VBG with/IN the/DT Halladay/NNP ,/, and/CC continuing/VBG with/IN the/DT Dempster/NNP Design/NNP wind/NN mills/NNS ./. -LRB-/-LRB- citation/NN needed/VBN -RRB-/-RRB- By/IN the/DT end/NN of/IN the/DT 19th/JJ Century/NNP ,/, the/DT first/JJ use/NN of/IN a/DT windmill/NN to/TO generate/VB electricity/NN was/VBD a/DT system/NN built/VBN in/IN Cleveland/NNP ,/, Ohio/NNP ,/, in/IN 1888/CD by/IN Charles/NNP F./NNP Brush/NNP ./. -LRB-/-LRB- citation/NN needed/VBN -RRB-/-RRB- 
+In/IN 1891/CD ,/, Dane/NNP Poul/NNP La/NNP Cour/NNP developed/VBD the/DT first/JJ electrical/JJ output/NN wind/NN machine/NN to/TO incorporate/VB aerodynamic/JJ design/NN principles/NNS ./. -LRB-/-LRB- citation/NN needed/VBN -RRB-/-RRB- In/IN the/DT century/NN to/TO follow/VB ,/, the/DT integration/NN of/IN composite/JJ materials/NNS allowed/VBN for/IN increased/VBN efficiencies/NNS and/CC performance/NN ./. -LRB-/-LRB- citation/NN needed/VBN -RRB-/-RRB- Starting/VBG in/IN the/DT early/JJ 1990/CD 's/POS increasing/VBG electricity/NN costs/NNS spawned/VBD wind/NN farms/NNS all/DT over/IN the/DT world/NN ./. -LRB-/-LRB- citation/NN needed/VBN -RRB-/-RRB- 
+Wind/NN mills/NNS have/VBP evolved/VBN from/IN being/VBG used/VBN only/RB for/IN grinding/VBG grain/NN and/CC water/NN pumping/VBG purposes/NNS to/TO a/DT renewable/JJ and/CC reliable/JJ source/NN of/IN electricity/NN used/VBN in/IN various/JJ applications/NNS such/JJ as/IN the/DT following/NN :/: -LRB-/-LRB- citation/NN needed/VBN -RRB-/-RRB- 
+\*/SYM Water/NNP pumping/VBG 
+\*/SYM Monitoring/NN sites/NNS 
+\*/SYM Cathodic/JJ protection/NN 
+\*/SYM Offshore/NNP platforms/NNS 
+\*/SYM Telecommunications/NNPS 
+\*/SYM Commercial\/retail/NN 
+\*/SYM Sailboats/NNS 
+\*/SYM Military/NNP 
+\*/SYM Grid-tied/JJ electrical/JJ systems/NNS 
+\*/SYM Remote/JJ homes/NNS and/CC cabins/NNS ./. 
+\*/SYM Generation/NNP of/IN electric/JJ energy/NN ,/, see/VBP Wind/NN power/NN ,/, Wind/NNP turbine/NN 
+\*/SYM Windmill/NN 

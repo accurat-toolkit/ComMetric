@@ -1,0 +1,55 @@
+one windfarm is a spatial accumulation of wind farms ( WEA ) . 
+he is created by the increase in drawing up these facilities in windreichen regions . 
+wind farms can divide in the following ways : ‘ \* Gewachsene `` wind farms are constructed by the spatial proximity successively installations have emerged . 
+\* Geplante wind farms are gatherings of installations of a Planers manufacturer or operator , which , in the context of a unsuitable bzw built . 
+were planned . 
+this also includes subsequent enlargements with a . 
+there are other To \* officially designated land for wind farms . 
+the aim is in the process of this in certain regions , in order to concentrate the rest of Landschaftsbild breaks . 
+I have received example is so far ( 2011 ) to wind power 0.8 % of the surface area of Schleswig-Holstein approved ; the government wants to extend it to at least 1.5 % . 
+( 1 ) to wind farms inland can , on the coast or a considerable distance from the coast at sea ( offshore ) be built . 
+you can only three , but also well over a hundred wind farms and few MW cover up many hundreds of MW Einspeiseleistung . 
+At wind farms are often also Windmessmasten either temporarily in advance of the establishment of forecasting of output permanently , or to serve the purposes of meteorological research be built . 
+approval procedures ( Bearbeiten ) The Bundesverwaltungsgericht ( BVerwG ) has in June 2004 decided that in Germany genehmigungsrechtlich an accumulation of at least three wind farms than windfarm applies ‘ space , if they are assigned to each other so that their Einwirkungsbereiche overlap , or at least touch `` ( 2 ) . 
+these must then after the enhanced Bundes-Immissionsschutzgesetz ( BImSchG ) be approved during otherwise , there is only one Baugenehmigungspflicht . 
+it is irrelevant whether the under review installations several operators will be assigned . 
+I also must also individual or ‘ only two `` installations after the BImSchG be approved if a plant a total of more than 50 metres achieved . 
+In Nordrhein-Westfalen increased the schwarz-gelbe government in 2005 the distance from for new bauende wind farms on to the next buildings of 500 metres to 1,500 metres ( 3 ) . 
+Let brought them the construction of new installations almost to a standstill ( 4 ) . 
+In July 2011 began loosening the rot-grüne government with a new ` Windenergieerlass ' provisions which until then had inhibited the development of wind energy ( 5 ) . 
+financing ( Bearbeiten ) wind farms were initially either by individual large investors financing or on a project funding , for example in the form of the creation of a coherent fund . 
+In a closed fund several investors to bring the equity capital , which is supplemented by a Bank-Darlehen ( 6 ) . 
+Since 2005 are also other forms , such as subleasing or the issuing of Genussscheinen possible . 
+Daneben have increasingly Bürgerwindparks established , for example in the legal form a Cooperative Society , as an alternative source of financing . 
+here , the people who suffer the damage by wind farms , the profits and only a lower economic risk . 
+For the financing of large Offshore-Windparks with a volume of currently ( May 2011 ) up to over EUR 1 billion will come only international corporations or consortia of such groups in question . 
+planning ( Bearbeiten ) In view of investors , it is an advantage that the planning from a hand : there can be no need for any annex an own approval procedures are carried out . 
+the argument for the planning of wind farms are a much more complicated procedure ( see the top ) and expertise required . 
+For the mutual influence , the need to minimise Rotoren ordered with a certain distance from each other . 
+this is largely dependent on the Anlagengröße and the prevailing wind . 
+As Faustformel for wind farms on the coast applies in Hauptwindrichtung of fivefold in Nebenwindrichtung the triple Rotordurchmesser as a minimum distance . 
+. however is in large wind farms that Turbulenzverhalten of Rotoren called multifraktaler way in the position of dependent on what significant deviations from the Kolmogoroff 's chen Turbulenztheorie for individual Rotoren makes ( 7 ) . 
+when Only ca . 
+the individual windmills 15-fachen Rotorabstand achieve a wind farms the optimum efficiency . 
+( 8 ) The Parkleistung is therefore always lower than the sum of the services ( denominations ) of the individual Park-Komponenten . 
+in the past , this ‘ Windpark-Effekt `` in many publications , up to in Datenblättern to individual projects , not taken into account . 
+Will this too high value also indicated in prospectuses , so it can to legal consequences for the responsible individuals ( Prospekthaftung ) . 
+establishment ( Bearbeiten ) establishment of windmills in the Erkelenzer Börde In the establishment of planned wind farms in a context of investor has the advantage that the whole infrastructure can be concentrated . 
+cranes and Zuwegung plants that can be used for several installations . 
+for example , the big Raupenkräne However must not be disposed of a Windenergieanlage , in order to go on to the next . 
+come it in the establishment of a plant to delays , in this time of a different plant be worked . 
+In wind farms must be equipped with a Hinderniskennzeichnung plants . 
+following the count coloured marking the Rotorblatt-Spitzen and the Befeuerung in poor sight . 
+Within of wind farms in new theme parks bzw Blitzen . 
+Blinken of light bulbs on the DCF77-Zeitsignal synchronised . 
+this will also rejects in older parks upgraded . 
+operation ( Bearbeiten ) For the Stromnetzbetreiber ( energy suppliers ) appear all wind farms of wind farms as a single plant ; thus easier and cheaper , for example , the Einspeisungsabrechnung for the operators of wind farms . 
+the regulation of wind farms is central to the whole windfarm . 
+each plant has also has its own management . 
+since a solid windfarm sometimes from different types of wind farms , composed of the different requirements for the wind speed up because of the Windverhältnisse , it can happen that individual windmills will be shut down . 
+wind turbines can adversely affect each other by , among certain Windrichtungen mutually aerodynamisch ‘ abschatten `` ( coattails ) . 
+it can then be sensible to switch off individual installations . 
+the Anlagen-Wartung too focused on several plants can be carried out . 
+Great Fahrtstrecken and - zeiten for the technicians . 
+The experience shows that the longer life cycles of Wartungstechnikern also increases the likelihood that a technician at a local Anlagenstörung ( in windfarm ) . 
+The reaction time so be shortened . 

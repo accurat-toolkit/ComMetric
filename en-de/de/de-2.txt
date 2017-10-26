@@ -1,0 +1,36 @@
+Anwendungen [Bearbeiten]
+Windmühle
+Kite-Surfen
+
+Hauptartikel zur Geschichte: Geschichte der Windenergienutzung
+
+Die Windenergie wird seit Jahrtausenden vom Menschen für seine Zwecke genutzt. Es kam zum einen zur Nutzung des Windes zur Fortbewegung mit Segelschiffen (siehe auch: Segeln) oder Ballons, zum anderen wurde die Windenergie zur Verrichtung mechanischer Arbeit mit Hilfe von Windmühlen und Wasserpumpen genutzt.
+
+Nach der Entdeckung der Elektrizität und der Erfindung des Generators lag auch der Gedanke der Nutzung der Windenergie zur Stromerzeugung nahe. Anfänglich wurden die Konzepte der Windmühlen nur abgewandelt und statt der Umsetzung der kinetischen Energie des Windes in mechanische Energie wurde über einen Generator elektrische Energie erzeugt. Mit der Weiterentwicklung der Strömungsmechanik wurden auch die Aufbauten und Flügelformen spezialisierter. Seit den Ölkrisen in den 1970er Jahren wird weltweit verstärkt nach Alternativen zur Energieerzeugung geforscht und damit wurde auch die Entwicklung moderner Windkraftanlagen vorangetrieben.[2]
+
+Stromerzeugung [Bearbeiten]
+Allgemeines [Bearbeiten]
+Windenergieanlagen in Dänemark
+Moderne Windkraftanlage in Bayern
+→ Hauptartikel: Windkraftanlage und Windpark
+
+Der Wind weht aufgrund der Sonneneinstrahlung tagsüber meist stärker als nachts und passt sich somit auf natürliche Weise dem am Tag höheren Energiebedarf an. In ähnlicher Weise ist oft die Erzeugung im Winter größer als im Sommer, was ebenfalls günstig ist.
+
+Windenergieanlagen können in allen Klimazonen, auf See und in allen Landformen (Küste, Binnenland, Gebirge) zur Stromerzeugung eingesetzt werden. 2009 ermittelten Forscher der Harvard-Universität unter konservativen Annahmen das globale Windenergiepotential und kamen zu dem Ergebnis, dass es den Weltenergiebedarf weit übersteigt: den damaligen Bedarf an elektrischer Energie um das 40-fache, den Gesamtenergiebedarf um das 5-fache.[3] Eine Studie des Max-Planck-Instituts für Biogeochemie zu den damit verbundenen Klimafolgen ergab, dass etwa der Weltenergiebedarf aus dem Wind entnommen werden kann, ohne dass es zu einer signifikanten Klimabeeinflussung kommt.[4]
+
+Aufgrund der Unstetigkeit des Windes kann die mit Windenergieanlagen gewonnene elektrische Energie nur im Verbund mit anderen Energiequellen oder mit Speichern (Windgas) für eine kontinuierliche Energiebereitstellung genutzt werden. (Siehe auch Regelenergie) Durch Prognose der Einspeisung und Austausch in und zwischen den Übertragungsnetzen (Regelzonen) muss die schwankende Stromerzeugung im Zusammenspiel mit anderen Kraftwerken wie die normalen Verbrauchsschwankungen ausgeglichen werden. Für Deutschland geht man laut einer Studie der DENA derzeit von 20 bis 25 % maximalem Anteil beim nur moderaten Ausbau der Netzinfrastruktur aus. Weitere Möglichkeiten, zukünftig die Windstrompenetration über einen solchen Wert hinaus zu erhöhen, sind:
+
+    * Verstärkung und Vermaschung des Hochspannungsübertragungsnetzes mit benachbarten Regelzonen über moderaten Ausbau hinaus
+    * Demand Side Management (zeitweiliges Abschalten oder verzögerter Betrieb nicht zwingend notwendiger Verbraucher)
+    * Energiespeicherung, zum Beispiel durch Pumpspeicherkraftwerke und Druckluftspeicherkraftwerk oder durch Speicherung nach Umwandlung als Windgas[5]
+    * Auslegung der Windkraftanlagen auf einen höheren Kapazitätsfaktor durch Erhöhung der Rotorfläche bei gleichbleibender Nennleistung
+    * Erhöhung der installierten Nennleistung und zeitweise Abschaltung bei Leistungsüberschuss
+In zahlreichen, zumeist dieselgestützten Inselnetzen mit Windstromeinspeisung (Australien, Antarktis, Falklands, Bonaire), werden neben dem Demand Side Management zudem Batterien und teilweise auch Schwungradspeicher zur kurz- und mittelfristigen Netzstabilisierung und -optimierung eingesetzt, wobei relativ schlechte Wirkungsgrade aus wirtschaftlichen Gründen (Reduktion des sehr teuren Dieselstromanteils) akzeptiert werden können. Speicherung von Windstrom durch Wasserstoffelektrolyse- und Verbrennung und Schwungradspeicher wurde in einem Modellprojekt auf der norwegischen Insel Utsira erprobt.
+
+Die Höhe der vorzuhaltenden Reserveleistung (Regelenergie) hängt auch erheblich von der Vorhersagegenauigkeit des Windes, der Regelungsfähigkeit des Netzes sowie dem zeitlichen Verlauf des Stromverbrauchs ab. Eine deutliche Verminderung des Bedarfs an Regelenergie entsteht durch Kombination von Windenergieanlagen an verschiedenen Standorten, da sich die Schwankungen der dortigen Windgeschwindigkeiten teilweise gegenseitig ausmitteln. (Weitere Informationen im Artikel Windenergieanlage.)
+
+Ältere drehzahlstarre Windenergieanlagen mit Asynchrongeneratoren, die in der Frühphase der Windenergienutzung zum Einsatz kamen, haben zum Teil Eigenschaften, die bei einem starken Ausbau Probleme im Netzbetrieb bereiten können; dies betrifft vor allem den sog. Blindstrom. Dem kann durch Blindstromkompensation abgeholfen werden; moderne drehzahlvariable Anlagen mit elektronischem Stromumrichter können den Blindstromanteil ohnehin nach den Anforderungen des Netzes beliebig einstellen und auch Spannungsschwankungen entgegenwirken, so dass sie sogar zur Netzstabilisierung beitragen können.
+
+Moderne Windenergieanlagen besitzen eine kurze energetische Amortisationszeit von nur wenigen Monaten.[6]
+
+

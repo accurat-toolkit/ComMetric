@@ -1,0 +1,11 @@
+Winde entstehen sowohl durch thermische Effekte mit der unterschiedlichen Sonneneinstrahlung als auch durch die Erdrotation. Lokale Einflüsse können lokal Winde entstehen lassen bzw. durch dort vorhandene Landschaftselemente in Abhängigkeit von der Höhe über dem Boden verstärken oder abschwächen: Wasser, Wiese, Wald oder Bebauung werden als verschiedene Rauigkeiten abgebildet, die die Reibung der Luft an der Erdoberfläche beschreibt. Auch an Bergformationen und andere lokale Ausprägungen (beispielsweise Städte) kann es zu Windströmungen kommen. An Verengungen oder anderen Hindernissen kann es zu Düsen- oder Kapeffekten kommen.
+Anteil Sonne [Bearbeiten]
+
+Wasserflächen erwärmen sich nur sehr langsam mit Ausnahme von moorigem, 'schwarzen' Wasser oder flachen Gewässern. Aufgrund der verschiedenen Wärmekapazitäten von Wasser und Land erwärmt sich das Land tagsüber schneller als das Wasser, und es weht tageszeitlich ein durch die entstehenden Druckunterschiede unterschiedlich wehender Wind zwischen Wasser und Land ("Seewind"). Zusätzlich kann der Wind über dem Wasser nahezu ungebremst wehen, so dass es besonders in Küstengebieten zu regelmäßigen und starken Winden kommt.
+
+Anders als vielfach angenommen erwärmt sich Luft nicht oder kaum, wenn sie von Sonnenstrahlen durchdrungen wird. Vielmehr erwärmen die Sonnenstrahlen die Gegenstände bzw. Flächen, auf die sie treffen; diese wiederum geben Wärmestrahlung ab und erwärmen dadurch die Luftschicht über ihnen. Die Sonnenenergie strahlt zudem ungleichmäßig auf die Erdoberfläche (EO) ein, es ändert sich dabei:
+
+    * der Winkel, in welchem sie auf die Oberfläche scheint - bezüglich Lage (die solare Einstrahlung in Äquatornähe größer als an den Polen) als auch Topografie (Bergwind-System).
+    * die Klarheit der Luft (Wolkenanteil, Luftverschmutzung, hochgewirbelten Staub etc.)
+
+Somit erwärmen die Sonnenstrahlen die Wasser- und Landmassen bzw. die Atmosphäre unterschiedlich. Eine Seite der Erde, die Nachtseite, ist der Sonne abgewandt. Die entstehenden Temperatur- und damit auch Druckunterschiede halten die Luftmassen in Bewegung.

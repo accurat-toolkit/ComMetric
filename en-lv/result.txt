@@ -1,0 +1,16 @@
+/home/fzsu/ComMetric/en-lv/en/en-1.txt	/home/fzsu/ComMetric/en-lv/lv/lv-2.txt	0.217
+/home/fzsu/ComMetric/en-lv/en/en-1.txt	/home/fzsu/ComMetric/en-lv/lv/lv-1.txt	0.3848
+/home/fzsu/ComMetric/en-lv/en/en-1.txt	/home/fzsu/ComMetric/en-lv/lv/lv-4.txt	0.1178
+/home/fzsu/ComMetric/en-lv/en/en-1.txt	/home/fzsu/ComMetric/en-lv/lv/lv-3.txt	0.0157
+/home/fzsu/ComMetric/en-lv/en/en-2.txt	/home/fzsu/ComMetric/en-lv/lv/lv-1.txt	0.2756
+/home/fzsu/ComMetric/en-lv/en/en-2.txt	/home/fzsu/ComMetric/en-lv/lv/lv-2.txt	0.1893
+/home/fzsu/ComMetric/en-lv/en/en-2.txt	/home/fzsu/ComMetric/en-lv/lv/lv-3.txt	0.0453
+/home/fzsu/ComMetric/en-lv/en/en-2.txt	/home/fzsu/ComMetric/en-lv/lv/lv-4.txt	0.1573
+/home/fzsu/ComMetric/en-lv/en/en-3.txt	/home/fzsu/ComMetric/en-lv/lv/lv-4.txt	0.1612
+/home/fzsu/ComMetric/en-lv/en/en-3.txt	/home/fzsu/ComMetric/en-lv/lv/lv-3.txt	0.0436
+/home/fzsu/ComMetric/en-lv/en/en-3.txt	/home/fzsu/ComMetric/en-lv/lv/lv-2.txt	0.2403
+/home/fzsu/ComMetric/en-lv/en/en-3.txt	/home/fzsu/ComMetric/en-lv/lv/lv-1.txt	0.3418
+/home/fzsu/ComMetric/en-lv/en/en-4.txt	/home/fzsu/ComMetric/en-lv/lv/lv-4.txt	0.179
+/home/fzsu/ComMetric/en-lv/en/en-4.txt	/home/fzsu/ComMetric/en-lv/lv/lv-3.txt	0.0623
+/home/fzsu/ComMetric/en-lv/en/en-4.txt	/home/fzsu/ComMetric/en-lv/lv/lv-2.txt	0.3127
+/home/fzsu/ComMetric/en-lv/en/en-4.txt	/home/fzsu/ComMetric/en-lv/lv/lv-1.txt	0.409

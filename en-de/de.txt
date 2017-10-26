@@ -1,0 +1,5 @@
+/home/fzsu/ComMetric/en-de/de/de-1.txt
+/home/fzsu/ComMetric/en-de/de/de-2.txt
+/home/fzsu/ComMetric/en-de/de/de-3.txt
+/home/fzsu/ComMetric/en-de/de/de-4.txt
+/home/fzsu/ComMetric/en-de/de/de-5.txt

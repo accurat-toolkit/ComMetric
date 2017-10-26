@@ -1,0 +1,3 @@
+.\en-ro\ro\file_ro_1.txt
+.\en-ro\ro\file_ro_2.txt
+.\en-ro\ro\file_ro_3.txt

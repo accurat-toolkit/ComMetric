@@ -1,0 +1,159 @@
+﻿ComMetric: a toolkit for measuring comparability of comparabile documents
+
+1. Overview and purpose of this toolkit
+This toolkit (ComMetric) is designed to measure the comparability levels of document pairs via cosine measure. The toolkit can compute comparability scores for both monolingual document pairs or bi-lingual document pairs (via using our translation toolkit). Also, given the fact that for some under-resourced languages it is usually difficult to obtain enough language processing resources or tools (e.g., POS tagger, machine-readable lexicons, stop-word filtering, word stemmer and lemmatizer), thus in this toolkit we first translate them into English (if the MT system which can translate the non-English texts into English is available) and then we can measure the comparability levels by utilizing the rich language resources in English.  
+Overall, the toolkit contains two modules: text translation and cosine-based comparability computation.  
+
+2. Software dependencies and system requirements
+
+(1) WordNet: the toolkit uses WordNet in a WordNet-based word stemmer. WordNet is available at http://wordnet.princeton.edu/wordnet/download/current-version/, the latest versions are WordNet 2.1 for Windows, and WordNet 3.0 for Unix-like system. 
+(2) JWI: the toolkit uses MIT Java Wordnet Interface (JWI, available at http://projects.csail.mit.edu/jwi/) to access WordNet for a WordNet-based word stemming. Not like the traditional word stemmer which return the stem form of a word (the stems are usually not words), the WordNet-based stemmer will check if possible stems are in the WordNet. If so, it will only return these WordNet-based stems; and if not it will return the traditional stem form. Since most of the stems are words, the WordNet-based stemming is like a simple word lemmatization tool (which returns lemma of a given word). 
+
+(3) Stanford CoreNLP toolkit: the toolkit uses the Stanford CoreNLP (available at http://nlp.stanford.edu/software/corenlp.shtml) for POS-tagging, sentence splitting, word tokenization and named entity recognition.
+
+(4) System platform: platform independent (Windows, Linux or Mac)
+
+(5) JRE: JRE 1.6.0 (lower version should also work)
+
+(6) Stop word list:  a folder which contains stop word list for German, Greek, English, Estonian, Croatian, Lithuanian, Latvian, Romanian and Slovenian  is already included in the toolkit
+(7) Python: DFKI's translation API for accessing MT-serverland is in the form of Python script, thus Python should be installed and set in the system environment variables. The version of Python should be 2.6 or higher, as the used modules such as "httplib2" or "json" are not available at lower version (e.g., “json” is only available in Python 2.6 and later).  
+(8) Internet access: The system uses Google, Bing and DFKI translation APIs for the text translation. Given that Google, Bing and DFKI translation APIs need to send request to remote servers for translation, thus the system should ensure that Internet is stably connected. 
+(9) Training model of POS-tagging and NER:  As the Stanford CoreNLP tool use supervise learning approach for POS-tagging and named entity recognition, the training models (“left3words-distsim-wsj-0-18.tagger”, and “conll.4class.distsim.crf.ser.gz”) should be included in the toolkit so that they can be loaded into system by default for POS-tagging and NER. 
+
+3. System modules
+
+(1) Text translation
+The translation toolkit allows users to translate text collections from a source language to a target language by using the available Google translation java API, Microsoft bing translation java API and DFKI's MT-serverland. Currently google translation API supports 63 languages and Bing Translation API supports 36 languages. The supported languages are listed as below. 
+
+Supported languages by Google Translation API:
+AUTO_DETECT AFRIKAANS ALBANIAN AMHARIC ARABIC ARMENIAN AZERBAIJANI BASQUE BELARUSIAN BENGALI BIHARI BULGARIAN BURMESE CATALAN CHEROKEE CHINESE CHINESE_SIMPLIFIED CHINESE_TRADITIONAL CROATIAN CZECH DANISH DHIVEHI DUTCH ENGLISH ESPERANTO ESTONIAN FILIPINO FINNISH FRENCH GALICIAN GEORGIAN GERMAN GREEK GUARANI GUJARATI HEBREW HINDI HUNGARIAN ICELANDIC INDONESIAN INUKTITUT IRISH ITALIAN JAPANESE KANNADA KAZAKH KHMER KOREAN KURDISH KYRGYZ LAOTHIAN LATVIAN LITHUANIAN MACEDONIAN MALAY MALAYALAM MALTESE MARATHI MONGOLIAN NEPALI NORWEGIAN ORIYA PASHTO PERSIAN POLISH PORTUGUESE PUNJABI ROMANIAN RUSSIAN SANSKRIT SERBIAN SINDHI SINHALESE SLOVAK SLOVENIAN SPANISH SWAHILI SWEDISH TAJIK TAMIL TAGALOG TELUGU THAI TIBETAN TURKISH UKRANIAN URDU UZBEK UIGHUR VIETNAMESE WELSH YIDDISH
+
+Supported language by Bing Translation API:
+AUTO_DETECT ARABIC BULGARIAN CHINESE_SIMPLIFIED CHINESE_TRADITIONAL CZECH DANISH DUTCH ENGLISH ESTONIAN FINNISH FRENCH GERMAN GREEK HATIAN_CREOLE HEBREW HUNGARIAN INDONESIAN ITALIAN JAPANESE KOREAN LATVIAN LITHUANIAN NORWEGIAN POLISH PORTUGUESE ROMANIAN RUSSIAN SLOVAK SLOVENIAN SPANISH SWEDISH THAI TURKISH UKRANIAN VIETNAMESE
+
+The translation toolkits supports two different manners of translation. For each translation call, you can send either a text string, or a string array for translation. Technically, in the following format:
+---------
+Manner 1: String result=Translate.execute(String text, SourceLanguage, TargetLanguage)
+Manner 2: String[] result=Translate.execute(String[] text, SourceLanguage, TargetLanguage)
+---------
+
+By default, the toolkit will call Manner 1 unless the user specifies using string array translation (Manner 2). 
+
+Also, the toolkit supports two different inputs of source documents which will be translated. (1) The uses can put all the documents to be translated in a directory, and the toolkit will read all the documents from that directory for translation. (2) Sometimes the documents to be translated are from different directories, in this case the user can provide a file which lists all the documents to be translated with full path, and the toolkit will read the documents using this file, and proceed the translation. Finally, apart from outputting the translated documents, a file which lists the full path of each translated document will be generated as well. 
+
+For a more detailed description about the usage of the translation APIs, please read the document “translation-README”. 
+
+Supported language pairs by DFKI's MT-serverland:
+English-Latvian (EN-LV, translate from English into English)
+English-Lithuanian (EN-LV), English-Estonian (EN-ET)
+English-Greek (EN-EL)
+English-Croatian (EN-HR) / Croatian-English (HR-EN)
+English-Romanian (EN-RO) / Romanian-English
+English-Slovenian (EN-SL) / Slovenian-English (SL-EN)
+German-English (DE-EN)
+German-Romanian (DE-RO) / Romanian-German (RO-DE)
+Greek-Romanian (EL-RO) / Romanian-Greek (RO-EL)
+Lithuanian-Romanian (LT-RO)
+Latvian-Lithuanian (LV-LT)
+
+(2) Comparability computation
+
+The toolkit at first calls the Standford CoreNLP tool (available at http://nlp.stanford.edu/software/corenlp.shtml) for POS-tagging and word tokenization. Then JWI (MIT Java WordNet Interface) is called for WordNet-based stemming. After word stemming, the stemmed text are converted into lexical vectors.  The comparability metric takes 4 different types of features into account:
+(1) Lexical features: the stemmed lexical vectors with stop-word filtering;
+(2) Structural feature: number of sentences and number of content word (using the POS-tagged result) of each documents;
+(3) Keyword feature: Top-20 keywords (based on TFIDF weight) of each document;
+(4) Named entity feature: named entities of each document by using Stanford NER module in the CoreNLP tool. 
+Finally, the toolkit applies cosine similarity measure on lexical features, keyword features, and named entity features individually, and then uses an weighted average strategy to combine these cosine scores into the comparability metric. Document pairs with a comparability score >=threshold (a predefined value, between 0-1) are returned as output.
+
+4. Installation
+(1) WordNet installation: download the latest WordNet version (Windows or Unix-like system) and install it. Record the path to the root of the Wordnet installation directory (For example, "/usr/local/WordNet-3.0" for linux, and "C:\WordNet-2.1" for Windows) and the dictionary data directory "dict" (the toolkit mainly uses the WordNet data in the "dict" directory) must be appended to this path (for example, "/usr/local/WordNet-3.0/dict", and "C:\WordNet-2.1\dict"). This might be different on your system, depending on where the WordNet files are located. 
+
+(2) JRE installation: download and install windows-based or linux-based JREs, depending on what system you use.
+
+(3) Python installation: The toolkit uses python to call DFKI's machine translation system. 
+
+5.  Quick Start:
+
+(1) Usage: 
+java -jar ComMetric.jar --source SourceLanguage --target TargetLanguage --WN Path2WordNet --threshold value --translationAPI [google|bing|dfki] --input path2SourceFileList --input path2TargetFileList --output path2result --tempDir path2TemporaryDirectory
+
+(2) Parameter description
+--source SourceLanguage: Non-English language
+--target TargetLanguage: any supported language by translation API
+--WN path2WordNet: the full path to the WordNet installation directory
+--threshold value: output the document pairs with a comparability score >= threshold (between 0-1)
+--translationAPI [google|bing|dfki]: use either google, bing or DFKI translationo API
+--input path2SourceFileList: path to the file that lists the full path to the documents in source language
+--input path2TargetFileList: path to the file that lists the full path to the documents in target language
+--output path2result: path to the file that store comparable document pairs with comparability scores
+--tempDir path2TemporaryDirectory: specify a path to a temporary directory (must exist) for storing intermediate outputs 
+
+(3) Examples
+
+Linux:
+java -jar ComMetric.jar --source LATVIAN --target ENGLISH --WN /home/fzsu/WordNet-3.0 --threshold 0.4 --translationAPI google --input /home/fzsu/ComMetric/sample/lv.txt --input /home/fzsu/ComMetric/sample/en.txt --output /home/fzsu/ComMetric/sample/result.txt --tempDir /home/fzsu/ComMetric/sample/temp
+
+Windows:
+java -jar ComMetric.jar --source LATVIAN --target ENGLISH --WN C:\WordNet\2.1 --threshold 0.4 --translationAPI google --input C:\ComMetric\sample\lv.txt --input C:\ComMetric\sample\en.txt --output C:\ComMetric\sample\result.txt --tempDir C:\ComMetric\sample\temp
+
+
+The above command example first translates Latvian documents listed in "lv.txt" in English and creates a folder called "LATVIAN-translation" in the directory "temp" to store the translated documents. A file called "LATVIAN-translation.txt" which lists full path to all the translated documents is also generated in the directory "temp". In addition, the stemmed data by word stemming process, and word and index vectors from text-to-vector process are stored in the directory "temp" as well. Finally, the toolkit computes comparability, and a document called "result.txt" which listed document pairs with comparability score >=threshold is generated in the specified path "/home/fzsu/ComMetric/sample/result.txt".  
+
+6. Input/output data formats
+
+(1) Input
+For the corpus, all the documents should be UTF-8 encoded, and in plain text. 
+
+Also, two files (such as "lv.txt" and "en.txt" in the above example) which lists full path to documents in source language and target document should be available. In these two files, each line stores the full path to a document. 
+
+For example, the format of "lv.txt" in Linux is as below:
+/home/fzsu/ComMetric/sample/LV/agriculture_lv.txt
+/home/fzsu/ComMetric/sample/LV/alcohol_lv.txt
+/home/fzsu/ComMetric/sample/LV/cystitis_lv.txt
+/home/fzsu/ComMetric/sample/LV/hockey3_lv.txt
+/home/fzsu/ComMetric/sample/LV/instruction7_lv.txt
+
+
+In windows, its format is as below:
+C:\ComMetric\ComMetric\sample\LV\agriculture_lv.txt
+C:\ComMetric\ComMetric\sample\LV\alcohol_lv.txt
+C:\ComMetric\ComMetric\sample\LV\cystitis_lv.txt
+C:\ComMetric\ComMetric\sample\LV\hockey3_lv.txt
+C:\ComMetric\ComMetric\sample\LV\instruction7_lv.txt
+
+
+(2) Output
+The final output file which lists document pairs with comparability scores is specified by the "--output" parameter. So in the above example, the result will be store in the file "result.txt". In this file, each line stores a pair of documents (full path to the documents) and the corresponding comparability score, separated by <TAB>. 
+
+For example, the format of "result.txt" is as below:
+/home/fzsu/ComMetric/sample/LV/instruction7_lv.txt<tab>/home/fzsu/ComMetric/sample/EN/instruction7_en.txt<tab>0.2331
+/home/fzsu/ComMetric/sample/LV/agriculture_lv.txt<tab>/home/fzsu/ComMetric/sample/EN/agriculture_en.txt<tab>0.5258
+/home/fzsu/ComMetric/sample/LV/alcohol_lv.txt<tab>/home/fzsu/ComMetric/sample/EN/alcohol_en.txt<tab>0.8334
+
+In windows, its format is as below.
+C:\ComMetric\sample\LV\agriculture_lv.txt<tab>C:\ComMetric\sample\EN\agriculture_en.txt<tab>0.5258
+C:\ComMetric\sample\LV\alcohol_lv.txt<tab>C:\ComMetric\sample\EN\alcohol_en.txt<tab>0.8334
+C:\ComMetric\sample\LV\plant_lv.txt<tab>C:\ComMetric\sample\EN\plant_en.txt<tab>0.7555
+
+7. Integration with external tools
+Assuming WordNet has been installed, the external tools in this toolkit include Stanford POS-tagger, JWI (Java WordNet Interface), both of them are java programs and packaged as ".jar" files, thus they have been included in this toolkit and no installation is required.
+
+8. Licence issue: 
+The toolkit uses five external resources: WordNet, JWI, and Standford POS tagger, Bing translation API and Google Translation API. WordNet and JWI are free for both research and commercial purposes, as long as proper acknowledgement is made, Standford POS tagger is free for research purpose but not commercial use. Bing and Google Translation APIs are also for research purpose only. Therefore, the licence of this toolkit is "Free to use/modify for research purposes".
+
+9. Updates
+(1) We add the clarification of licence issue in this document. 
+(2) DFKI MT-serverland is included as a new text translation option (apart from Google and Bing translation) in the metric. 
+(3) The modules of keyword extraction, named entity recognition, structure feature generation, and the linear combination of the four type of feature (lexical feature, document structure, keywords, named entities) have been integrated into the new version of ComMetric. 
+(4) The current toolkit provides two different forms executable files: ComMetric.jar and ComMetric-solo.jar. ComMetric-solo.jar can be used as API and the external APIs (google-api-translate-java-0.95.jar, json-20090211.jar, microsoft-translator-java-api-0.4-updated-jar-with-dependencies.jar, edu.mit.jwi_2.1.5_jdk.jar" and "stanford-corenlp-2012-05-22.jar") it calls are put separately in the same directory (NOTE THAT these external APIs should be put in the same directory of ComMetric-solo.jar so that ComMetric-solo.jar can be properly executed). In ComMetric.jar, all the external APIs have been included during its export process so that the users can use "ComMetrics.jar" directly without dealing with the external APIs it calls.
+
+10. Contact
+If you find problems or bugs in the toolkit, please report to Fangzhong Su (smlfs@leeds.ac.uk). 
+
+11. Useful references
+(1) Christiane Fellbaum. WordNet: An Electronic Lexical Database. MIT Press, 1998.
+(2) Kristina Toutanova and Christopher D. Manning. 2000. Enriching the Knowledge Sources Used in a Maximum Entropy Part-of-Speech Tagger. In Proceedings of the Joint SIGDAT Conference on Empirical Methods in Natural Language Processing and Very Large Corpora (EMNLP/VLC-2000), pp. 63-70.
+(3) Kristina Toutanova, Dan Klein, Christopher Manning, and Yoram Singer. 2003. Feature-Rich Part-of-Speech Tagging with a Cyclic Dependency Network. In Proceedings of HLT-NAACL 2003, pp. 252-259.
+(4) Jenny Rose Finkel, Trond Grenager, and Christopher Manning. 2005. Incorporating Non-local Information into Information Extraction Systems by Gibbs Sampling. Proceedings of the 43nd Annual Meeting of the Association for Computational Linguistics (ACL 2005), pp. 363-370.
+(5) JWI: http://projects.csail.mit.edu/jwi/  
+

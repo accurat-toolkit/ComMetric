@@ -1,0 +1,1 @@
+java -jar ComMetric-solo.jar --source ROMANIAN --target ENGLISH --WN "C:\Program Files (x86)\WordNet\2.1" --threshold 0.4 --translationAPI dfki --input .\en-ro\ro.txt --input .\en-ro\en.txt --output .\en-ro\DfkiResult.txt --tempDir .\tmp

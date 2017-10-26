@@ -1,0 +1,3 @@
+.\en-ro\en\file_en_1.txt
+.\en-ro\en\file_en_2.txt
+.\en-ro\en\file_en_3.txt
